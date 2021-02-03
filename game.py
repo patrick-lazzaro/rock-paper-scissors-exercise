@@ -28,8 +28,26 @@ print(f"You chose: {user_choice}")
 options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(options)
 
-print(f"The computer chose {computer_choice}")
+print(f"The computer chose: {computer_choice}")
 
+#
+# validate the user selection
+#
+# stop the program (not try to determine the winner)
+# ... if the user chocie is invalid
+
+#user_choice.lower()
+
+#if user_choice in options:
+    #print("GOOD")
+    #pass
+#else:
+    #print("OOPS, please choose a valid option and try again")
+    #exit()
+
+if user_choice not in options
+    print("OOPS, please choose a valid option and try again")
+    exit()
 
 
 #
