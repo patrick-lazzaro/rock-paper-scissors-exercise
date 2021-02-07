@@ -1,13 +1,13 @@
 # game.py
 
 import os
+import dotenv 
 import random
 
 #
 # Customize player name 
 #
 
-import dotenv 
 dotenv.load_dotenv()
 PLAYER_NAME = os.getenv("PLAYER_NAME", default="Player One") 
 
@@ -23,8 +23,9 @@ print("-------------------")
 # Asking user for an input
 #
 
-
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
+
+user_choice = user_choice.lower()
 
 #
 # Validate the user selection
@@ -32,8 +33,6 @@ user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 #
 
 options = ["rock", "paper", "scissors"]
-
-user_choice.lower()
 
 if user_choice not in options:
     print("OOPS, please choose a valid option and try again")
