@@ -50,7 +50,7 @@ print(f"The computer chose: {computer_choice}")
 
 #
 # Determining who won
-# If statement is adapted from solution shared by Estelle in class 
+# If statement is adapted from solution shared by Estelle in slack 
 #
 
 if computer_choice == "paper" and user_choice == "scissors":
@@ -67,7 +67,7 @@ else:
 print("-------------------")
 
 #
-#Exit message
+# Exit message
 #
 
 print("Thanks for playing. Please play again!")
