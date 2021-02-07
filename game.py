@@ -12,7 +12,7 @@ dotenv.load_dotenv()
 PLAYER_NAME = os.getenv("PLAYER_NAME", default="Player One") 
 
 #
-# Welcome screen
+# Welcome message
 #
 
 print("-------------------")
