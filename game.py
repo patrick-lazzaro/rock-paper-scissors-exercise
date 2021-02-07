@@ -1,14 +1,26 @@
 # game.py
 
-
+import os
 import random
 
+#
+# Customize player name 
+#
+
+import dotenv 
+dotenv.load_dotenv()
+PLAYER_NAME = os.getenv("PLAYER_NAME", default="Player One") 
+
+#
+# Welcome screen
+#
+
 print("-------------------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print(f"Welcome '{PLAYER_NAME}' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 #
-# asking user for an input
+# Asking user for an input
 #
 
 
@@ -16,10 +28,8 @@ user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
 #
 # Validate the user selection
+# Exit program if choice is invalid 
 #
-# stop the program (not try to determine the winner)
-# ... if the user chocie is invalid
-
 
 options = ["rock", "paper", "scissors"]
 
@@ -32,18 +42,12 @@ if user_choice not in options:
 print(f"You chose: {user_choice}")
 
 #
-#simulating a computer input
+# Simulating a computer input
 #
-
-#computer_choice = "paper"
-
-#foo = ['a', 'b', 'c', 'd', 'e']
-#computer_choice = random.choice(foo)
 
 computer_choice = random.choice(options)
 
 print(f"The computer chose: {computer_choice}")
-
 
 #
 # Determining who won
@@ -63,7 +67,9 @@ else:
 
 print("-------------------")
 
-#exit message
+#
+#Exit message
+#
 
 print("Thanks for playing. Please play again!")
 
