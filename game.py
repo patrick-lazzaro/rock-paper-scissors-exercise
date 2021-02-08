@@ -47,6 +47,7 @@ print(f"You chose: {user_choice}")
 computer_choice = random.choice(options)
 
 print(f"The computer chose: {computer_choice}")
+print("-------------------")
 
 #
 # Determining who won
